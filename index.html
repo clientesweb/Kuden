@@ -64,7 +64,7 @@
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 </head>
 
-<body>
+<body class="home-page">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
@@ -73,6 +73,12 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="announcement-bar">
+            <div class="container d-flex align-items-center justify-content-center">
+                <span class="announcement-label"><i class="fa fa-bullhorn me-2" aria-hidden="true"></i>Admisiones abiertas</span>
+                <a class="announcement-link" href="#admissions">Clic acá para conocer el proceso <i class="fa fa-arrow-right ms-1" aria-hidden="true"></i></a>
+            </div>
+        </div>
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
                 <small><i class="fa fa-map-marker-alt me-2"></i>Medina 459, Ituzaingó, Buenos Aires</small>
@@ -89,7 +95,7 @@
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo%20%282%29-PEQFeC422FCqmYyo4WPRGXgLwnxtMx.png" alt="Kudén - Equipo Terapéutico Interdisciplinario" width="250" height="100" class="d-inline-block align-top">
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -99,7 +105,13 @@
                     <a href="servicios.html" class="nav-item nav-link">Servicios</a>
                     <a href="blog.html" class="nav-item nav-link">Blog</a>
                     <a href="#team" class="nav-item nav-link">Equipo</a>
+                    <a href="#admissions" class="nav-item nav-link">Admisiones</a>
                     <a href="#contact" class="nav-item nav-link">Contacto</a>
+                </div>
+                <div class="nav-mobile-cta d-lg-none">
+                    <a class="btn btn-primary w-100 py-2" href="https://wa.me/5491139568394" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>Hace tu consulta
+                    </a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn btn-outline-primary py-2 px-3" href="#contact">
@@ -124,14 +136,16 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Espacio Terapéutico Integral</h1>
-                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">Acompañamos a niños y adolescentes en su desarrollo, respetando su singularidad</p>
-                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="#contact">
-                                        Agenda tu consulta
+                                    <span class="hero-eyebrow animated slideInDown">Un espacio para crecer, en familia</span>
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Acompañamos cada infancia con una mirada única</h1>
+                                    <p class="fs-5 text-white-50 mb-4 animated slideInDown">Atención terapéutica interdisciplinaria para niños, adolescentes y sus familias en Ituzaingó.</p>
+                                    <a class="btn btn-primary py-3 px-4 me-2 mb-2 animated slideInDown" href="https://wa.me/5491139568394" target="_blank" rel="noopener">
+                                        <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>Hablemos por WhatsApp
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </a>
+                                    <a class="btn btn-outline-light py-3 px-4 mb-2 animated slideInDown" href="#admissions">Conocé cómo empezar</a>
                                 </div>
                             </div>
                         </div>
@@ -143,10 +157,11 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown">Equipo Interdisciplinario</h1>
-                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">Profesionales especializados en el desarrollo infantil y adolescente</p>
-                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="quienes-somos.html">
-                                        Conoce más sobre nosotros
+                                    <span class="hero-eyebrow animated slideInDown">Un equipo que trabaja en red</span>
+                                    <h2 class="display-4 text-white mb-3 animated slideInDown">Un camino terapéutico construido en conjunto</h2>
+                                    <p class="fs-5 text-white-50 mb-4 animated slideInDown">Escuchamos a cada familia y coordinamos los apoyos que acompañan el desarrollo.</p>
+                                    <a class="btn btn-primary py-3 px-4 animated slideInDown" href="https://wa.me/5491139568394" target="_blank" rel="noopener">
+                                        <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>Solicitá una primera charla
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
@@ -174,11 +189,10 @@
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/about-1.jpg" alt="Equipo terapéutico de Kudén" style="object-fit: cover;">
-                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/about-2.jpg" alt="Terapia con niños" style="width: 200px; height: 200px;">
+                    <div class="about-image-frame">
+                        <img class="about-image" src="img/que-es-kuden.png" alt="¿Qué es Kudén? Equipo terapéutico interdisciplinario">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -197,8 +211,8 @@
                                 <i class="fa fa-arrow-right"></i>
                             </div>
                         </a>
-                        <a class="btn btn-outline-primary py-2 px-3" href="#contact">
-                            Contáctanos
+                        <a class="btn btn-outline-primary py-2 px-3" href="https://wa.me/5491139568394" target="_blank" rel="noopener">
+                            Hablemos de tu consulta
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
@@ -210,6 +224,57 @@
     </div>
     <!-- About End -->
 
+    <!-- Admissions Process Start -->
+    <section class="admissions-section py-5" id="admissions">
+        <div class="container py-lg-4">
+            <div class="row align-items-end g-4 mb-5">
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-kicker mb-3"><span></span>Admisiones abiertas</div>
+                    <h2 class="display-6 mb-3">Empezar es un camino que hacemos juntos</h2>
+                    <p class="admissions-intro mb-0">Te acompañamos paso a paso para conocer a tu familia y construir una propuesta terapéutica acorde a sus necesidades.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end wow fadeInUp" data-wow-delay="0.2s">
+                    <a class="btn btn-outline-primary py-2 px-3" href="https://wa.me/5491139568394" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp me-2" aria-hidden="true"></i>Consultanos por admisiones
+                    </a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <article class="admissions-step h-100">
+                        <span class="admissions-step-number" aria-hidden="true">01</span>
+                        <div class="admissions-step-icon"><i class="fa fa-comments" aria-hidden="true"></i></div>
+                        <h3>Entrevista inicial</h3>
+                        <p class="mb-0">Conocemos el motivo de consulta, las características del niño/a o adolescente y su familia, y el recorrido terapéutico y educativo.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <article class="admissions-step h-100">
+                        <span class="admissions-step-number" aria-hidden="true">02</span>
+                        <div class="admissions-step-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+                        <h3>Análisis interdisciplinario</h3>
+                        <p class="mb-0">El equipo analiza el caso y acuerda con la familia la estrategia terapéutica más adecuada, incluyendo disciplinas y apoyos necesarios.</p>
+                    </article>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <article class="admissions-step h-100">
+                        <span class="admissions-step-number" aria-hidden="true">03</span>
+                        <div class="admissions-step-icon"><i class="fa fa-calendar-check" aria-hidden="true"></i></div>
+                        <h3>Coordinación</h3>
+                        <p class="mb-0">Acordamos horarios y acompañamos a la familia en la organización y/o presentación del esquema terapéutico a la obra social.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="admissions-footer mt-4 wow fadeInUp" data-wow-delay="0.2s">
+                <p class="mb-3 mb-md-0">¿Querés dar el primer paso? Estamos para orientarte.</p>
+                <a class="btn btn-primary py-2 px-3" href="https://wa.me/5491139568394" target="_blank" rel="noopener">
+                    Escribinos por WhatsApp <i class="fa fa-arrow-right ms-2" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Admissions Process End -->
+
     <!-- Service Start -->
     <div class="container-xxl py-5" id="services">
         <div class="container">
@@ -219,82 +284,68 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-2.png" alt="">
-                        <h4 class="mb-3">Psicopedagogía</h4>
-                        <p class="mb-4">Evaluamos y abordamos las dificultades de aprendizaje promoviendo el deseo de aprender, teniendo en cuenta el potencial de cada niño y/o adolescente, respetando sus tiempos de aprendizaje.</p>
-                        <a class="btn btn-outline-primary px-3" href="servicios.html">
-                            Leer más
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
+                    <article class="specialty-card h-100">
+                        <img class="specialty-image" src="img/especialidades/Psicopedagogía_ aprender con confianza.png" alt="Psicopedagogía: aprender con confianza">
+                        <a class="specialty-cta" href="#contact" aria-label="Consultar por Psicopedagogía">
+                            Consultar <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
-                    </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <article class="specialty-card h-100">
+                        <img class="specialty-image" src="img/especialidades/Musicoterapia_ sonidos que acompañan.png" alt="Musicoterapia: sonidos que acompañan">
+                        <a class="specialty-cta" href="#contact" aria-label="Consultar por Musicoterapia">
+                            Consultar <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-4.png" alt="">
-                        <h4 class="mb-3">Musicoterapia</h4>
-                        <p class="mb-4">Abordamos al niño y/o adolescente utilizando la música y sus elementos (ritmo, melodía, armonía) para facilitar y promover la comunicación con los otros y demás objetivos terapéuticos.</p>
-                        <a class="btn btn-outline-primary px-3" href="servicios.html">
-                            Leer más
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
+                    <article class="specialty-card h-100">
+                        <img class="specialty-image" src="img/especialidades/Psicología infantil_ acompañar y crecer.png" alt="Psicología infantil: acompañar y crecer">
+                        <a class="specialty-cta" href="#contact" aria-label="Consultar por Psicología infantil">
+                            Consultar <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-1.png" alt="">
-                        <h4 class="mb-3">Psicología</h4>
-                        <p class="mb-4">Evaluamos la singularidad de cada niño y/o adolescente detectando dificultades en su proceso de desarrollo, sus potencialidades e intereses, teniendo en cuenta el entorno en el que se desarrolla.</p>
-                        <a class="btn btn-outline-primary px-3" href="servicios.html">
-                            Leer más
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                        </a>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-3.png" alt="">
-                        <h4 class="mb-3">Psicomotricidad</h4>
-                        <p class="mb-4">Abordamos el tratamiento del niño y/o adolescente teniendo en cuenta el punto de encuentro entre la realidad neuromotora del desarrollo y la constitución subjetiva a través de experiencias significativas.</p>
-                        <a class="btn btn-outline-primary px-3" href="servicios.html">
-                            Leer más
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
+                    <article class="specialty-card h-100">
+                        <img class="specialty-image" src="img/especialidades/Psicomotricidad_ juego y desarrollo.png" alt="Psicomotricidad: juego y desarrollo">
+                        <a class="specialty-cta" href="#contact" aria-label="Consultar por Psicomotricidad">
+                            Consultar <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
-                    </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <article class="specialty-card h-100">
+                        <img class="specialty-image" src="img/especialidades/Orientación a padres y crianza.png" alt="Orientación a padres y crianza">
+                        <a class="specialty-cta" href="#contact" aria-label="Consultar por Orientación a padres y crianza">
+                            Consultar <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-5.png" alt="">
-                        <h4 class="mb-3">Orientación a Padres</h4>
-                        <p class="mb-4">Brindamos asesoramiento y acompañamiento a padres y cuidadores para fortalecer sus recursos y estrategias en la crianza y el desarrollo de sus hijos, facilitando herramientas para afrontar desafíos específicos.</p>
-                        <a class="btn btn-outline-primary px-3" href="servicios.html">
-                            Leer más
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
+                    <article class="specialty-card h-100">
+                        <img class="specialty-image" src="img/especialidades/Estimulación temprana en juego.png" alt="Estimulación temprana en juego">
+                        <a class="specialty-cta" href="#contact" aria-label="Consultar por Estimulación temprana">
+                            Consultar <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="img/icon-6.png" alt="">
-                        <h4 class="mb-3">Talleres</h4>
-                        <p class="mb-4">Desarrollamos talleres grupales para niños, adolescentes y familias, enfocados en habilidades sociales, expresión emocional, creatividad y otras áreas específicas que promueven el desarrollo integral.</p>
-                        <a class="btn btn-outline-primary px-3" href="servicios.html">
-                            Leer más
-                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <article class="specialty-card h-100">
+                        <img class="specialty-image" src="img/especialidades/Fonoaudiología_ comunicación que acompaña.png" alt="Fonoaudiología: comunicación que acompaña">
+                        <a class="specialty-cta" href="#contact" aria-label="Consultar por Fonoaudiología">
+                            Consultar <i class="fa fa-arrow-right" aria-hidden="true"></i>
                         </a>
-                    </div>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <article class="specialty-card h-100">
+                        <img class="specialty-image" src="img/especialidades/Terapia ocupacional_ crecer jugando.png" alt="Terapia ocupacional: crecer jugando">
+                        <a class="specialty-cta" href="#contact" aria-label="Consultar por Terapia ocupacional">
+                            Consultar <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
                 </div>
             </div>
         </div>
@@ -341,7 +392,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded" src="img/feature.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded" src="img/about-2.jpg" alt="Acompañamiento terapéutico para niños" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -453,11 +504,11 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Contáctanos</div>
-                    <h1 class="display-6 mb-5">Si tienes alguna consulta, no dudes en contactarnos</h1>
-                    <p class="mb-4">Estamos aquí para ayudarte. Puedes comunicarte con nosotros a través de los siguientes medios:</p>
-                    <div class="bg-light rounded p-4 mb-4">
+                    <h1 class="display-6 mb-4">Conversemos sobre lo que necesitan</h1>
+                    <p class="mb-4">Escríbenos y te orientamos para encontrar el espacio de acompañamiento más adecuado para tu familia.</p>
+                    <div class="contact-options p-4 mb-4">
                         <div class="d-flex align-items-center mb-4">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <div class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white">
                                 <i class="fa fa-map-marker-alt text-primary"></i>
                             </div>
                             <div class="ms-4">
@@ -466,23 +517,30 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-center mb-4">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <div class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white">
                                 <i class="fab fa-whatsapp text-success"></i>
                             </div>
                             <div class="ms-4">
-                                <h5 class="mb-2">WhatsApp</h5>
-                                <p class="mb-0">+54 9 11 3956-8394</p>
+                                <h5 class="mb-2">Escríbenos por WhatsApp</h5>
+                                <a class="contact-link d-block mb-1" href="https://wa.me/5491139568394" target="_blank" rel="noopener">+54 9 11 3956-8394</a>
+                                <a class="contact-link d-block" href="https://wa.me/5491157979931" target="_blank" rel="noopener">+54 9 11 5797-9931</a>
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
-                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <div class="contact-icon d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white">
                                 <i class="fa fa-envelope text-primary"></i>
                             </div>
                             <div class="ms-4">
-                                <h5 class="mb-2">Email</h5>
-                                <p class="mb-0 text-break">Kuden.equipoterapeutico@gmail.com</p>
+                                <h5 class="mb-2">Escríbenos por email</h5>
+                                <a class="contact-link text-break" href="mailto:Kuden.equipoterapeutico@gmail.com">Kuden.equipoterapeutico@gmail.com</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-primary py-2 px-3 me-3" href="https://wa.me/5491139568394" target="_blank" rel="noopener">
+                            Quiero hacer una consulta
+                            <i class="fab fa-whatsapp ms-2"></i>
+                        </a>
                     </div>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square me-2" href="https://www.facebook.com/kudenequipoterapeutico"><i class="fab fa-facebook-f"></i></a>
@@ -516,29 +574,8 @@
                     <a class="btn btn-square me-1" href="https://www.instagram.com/kuden.equipoterapeutico/"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            
-<div class="col-lg-3 col-md-6">
-    <h5 class="text-light mb-4">Contáctanos</h5>
-    <div class="bg-dark p-4 rounded border border-secondary">
-        <p class="mb-2"><i class="fab fa-whatsapp text-success me-2"></i><strong class="text-white">WhatsApp:</strong></p>
-        <p class="mb-3 ps-4">+54 9 11 3956-8394</p>
-        
-        <p class="mb-2"><i class="fa fa-envelope text-primary me-2"></i><strong class="text-white">Email:</strong></p>
-        <p class="mb-3 ps-4 text-break">Kuden.equipoterapeutico@gmail.com</p>
-        
-        <a href="https://wa.me/5491139568394" class="btn btn-primary w-100 py-2 mt-2">
-            <i class="fab fa-whatsapp me-2"></i>Escríbenos por WhatsApp
-        </a>
-    </div>
-</div>
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Dirección</h5>
-                <p><i class="fa fa-map-marker-alt me-3"></i>Medina 459, Ituzaingó, Buenos Aires</p>
-                <p><i class="fab fa-whatsapp me-3 text-success"></i>+54 9 11 5694-7530</p>
-                <p><i class="fa fa-envelope me-3"></i>Kuden.equipoterapeutico@gmail.com</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Enlaces Rápidos</h5>
+                <h5 class="text-light mb-4">Explora Kudén</h5>
                 <a class="btn btn-link" href="quienes-somos.html">Sobre Nosotros</a>
                 <a class="btn btn-link" href="servicios.html">Nuestros Servicios</a>
                 <a class="btn btn-link" href="blog.html">Blog</a>
@@ -546,18 +583,15 @@
                 <a class="btn btn-link" href="#contact">Contacto</a>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Contáctanos</h5>
-                <div class="bg-dark p-4 rounded border border-secondary">
-                    <p class="mb-2"><i class="fab fa-whatsapp text-success me-2"></i><strong class="text-white">WhatsApp:</strong></p>
-                    <p class="mb-3 ps-4">+54 9 11 5694-7530</p>
-                    
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-2"></i><strong class="text-white">Email:</strong></p>
-                    <p class="mb-3 ps-4 text-break">Kuden.equipoterapeutico@gmail.com</p>
-                    
-                    <a href="https://wa.me/5491156947530" class="btn btn-primary w-100 py-2 mt-2">
-                        <i class="fab fa-whatsapp me-2"></i>Escríbenos por WhatsApp
-                    </a>
-                </div>
+                <h5 class="text-light mb-4">Visítanos</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>Medina 459, Ituzaingó, Buenos Aires</p>
+                <a class="footer-contact-link d-block" href="https://maps.google.com/?q=Medina+459,+Ituzaing%C3%B3,+Buenos+Aires" target="_blank" rel="noopener"><i class="fa fa-directions me-3"></i>Cómo llegar</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Hablemos</h5>
+                <a class="footer-contact-link d-block mb-2" href="https://wa.me/5491139568394" target="_blank" rel="noopener"><i class="fab fa-whatsapp text-success me-3"></i>+54 9 11 3956-8394</a>
+                <a class="footer-contact-link d-block mb-3" href="https://wa.me/5491157979931" target="_blank" rel="noopener"><i class="fab fa-whatsapp text-success me-3"></i>+54 9 11 5797-9931</a>
+                <a class="footer-contact-link d-block text-break" href="mailto:Kuden.equipoterapeutico@gmail.com"><i class="fa fa-envelope me-3"></i>Kuden.equipoterapeutico@gmail.com</a>
             </div>
         </div>
     </div>
@@ -568,7 +602,6 @@
                     &copy; <a href="#">Kudén</a>, Todos los derechos reservados.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    Diseñado por <a href="https://htmlcodex.com" target="_blank">HTML Codex</a> <br>
                     Powered By <a href="https://dualitydomain.com" target="_blank">Duality Domain</a>
                 </div>
             </div>
@@ -592,23 +625,6 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     
-    <!-- WhatsApp Form Submission Script -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const whatsappLinks = document.querySelectorAll('a[href^="https://wa.me/"]');
-        
-        whatsappLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const phoneNumber = "5491139568394";
-                const message = "Hola, estoy interesado/a en obtener más información sobre los servicios de Kudén.";
-                
-                window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
-            });
-        });
-    });
-</script>
 </body>
 
 </html>
